@@ -29,8 +29,8 @@ const addNote =()=>{
                     <div className="main_note">
                         <form>
                             <div class="form-group d-flex flex-column" >
-                                <input type="text" class=" mx-2 mt-4 note_title"  name="title" value={note.title} onChange={inputNote} autoComplete="off" placeholder="Title" />
-                                <textarea placeholder="Write a note here..."  rows="3"className=" my-3 mx-2 note_content" name="content" value={note.content} onChange={inputNote} ></textarea>
+                                <input type="text" class=" mx-2 mt-4 note_title"  name="title" value={note.title} onChange={inputNote} autoComplete="off" placeholder="Title" required />
+                                <textarea placeholder="Write a note here..."  rows="3"className=" my-3 mx-2 note_content" name="content" value={note.content} onChange={inputNote} required ></textarea>
                                 <center><button className="note_btn" onClick={addNote} type="button"  ><PostAddIcon/></button></center>
                             </div>
                         </form>
