@@ -6,14 +6,12 @@ import "./index.css"
 
 const Header =()=>{
     return(
-        <>
-                    
-            <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="/">
-                <img src={logo2} width="40" height="40" class="d-inline-block align-top " alt="logo" loading="lazy"/>
-                    <span className="head pl-3 py-auto"><u>aWrites</u></span>
-                </a>  
- 
+        <>             
+            <nav className="navbar text-white">
+                <a className="navbar-brand" href="/">
+                    <img src={logo2} width="40" height="40" className="d-inline-block align-top" alt="logo" loading="lazy"/>
+                    <span className="head pl-3 py-auto text-white"><u>aWrites</u></span>
+                </a>
             </nav>
         </>
     )
