@@ -33,7 +33,7 @@ const CreateNote = (props) => {
                                     <input type="text" className=" mx-2 mt-4 note_title" name="title" value={note.title} onChange={inputNote} autoComplete="off" placeholder="Title" required />
                                     <textarea placeholder="Write a note here..." rows="3" className=" my-3 mx-2 note_content" name="content" value={note.content} onChange={inputNote} required ></textarea>
                                     <center>
-                                        <button className="note_btn " onClick={addNote} type="button"><span className="p-2 hide">CREATE</span><PostAddIcon /></button>
+                                        <button className="note_btn" onClick={addNote} type="button"><span className="p-0 hide">CREATE</span><PostAddIcon /></button>
                                     </center>
                                 </div>
                             </form>
