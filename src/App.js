@@ -3,9 +3,9 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import Header from './Header'
 import CreateNote from "./CreateNote.js"
 import Note from "./Note.js"
-import EditNote from "./EditNote.js"
+// import EditNote from "./EditNote.js"
 import Footer from "./Footer.js"
-import { createPosts, deletePosts, getPosts, editPosts } from "./API"
+import { createPosts, deletePosts, getPosts } from "./API"
 
 
 const App = () => {
