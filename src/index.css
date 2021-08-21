@@ -37,7 +37,6 @@ body{
 }
 
 
-
 .main_note input[type="text"]{
     border: 1px solid #aaa; 
     border-bottom: 3px solid #aaa; 
@@ -80,6 +79,7 @@ textarea:hover{
     color:#aaa;
     border-bottom-right-radius: 10px ;
     border-bottom-left-radius: 10px ;
+    font-family: 'Pangolin', cursive;
 }
 
 .note_btn:focus{
@@ -89,7 +89,7 @@ textarea:hover{
 
 .note_btn:hover{
     outline:#f0ad4e;
-    border:2px solid #f0ad4e;
+    /* border:2px solid #f0ad4e; */
     background-color:#f0ad4e;
     color:black;
 }
@@ -192,4 +192,17 @@ textarea:hover{
     .foot{
         font-size:15px;
     }
+
+    .hide{
+        display: none;
+    }
 }    
+
+
+.blur{
+    /* color: transparent;
+    text-shadow: rgba(0, 0, 0, 0.95) 0px 0px 10px; */
+
+    filter: blur(1.5rem);
+    /* overflow: hidden; */
+}
