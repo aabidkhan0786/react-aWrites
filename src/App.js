@@ -11,7 +11,8 @@ import { createPosts, deletePosts, getPosts } from "./API"
 const App = () => {
     const [item, setItem] = useState([]);
     const [loading, setLoading] = useState(false);
-    // const [edit, setEdit] = useState(false);
+    // const [dark, setDark] = useState(false);
+    const [list, setList] = useState(false);
 
 
     useEffect(() => {
@@ -53,6 +54,11 @@ const App = () => {
     //     setNote(notes.data)
     // }
 
+    const alignList = (mode)=>{
+        console.log(mode);
+        // setDark(mode)
+        setList(mode)
+    }
     const getAllPosts = async () => {
         setLoading(true)
         const posts = await getPosts();
@@ -61,7 +67,7 @@ const App = () => {
     }
     return (
         <>
-            <Header />
+            <Header alignList={alignList} />
             <CreateNote passNote={disNote} />
             {/* {
                 edit ? 
@@ -78,15 +84,23 @@ const App = () => {
                     </div>
                 </div> :
                 item && item.map((val, index) => {
-                    return <Note
+                    return <> 
+                    <div className="">
+                        
+                    <Note
                         key={index}
                         id={val._id}
                         title={val.title}
                         content={val.content}
                         deleteNote={delNote}
-                    // editNote={editNote}
-                    // editing={edit}
-                    />
+                        // darkMode={dark}
+                        listAlign={list}
+                        // editNote={editNote}
+                        // editing={edit}
+                        />
+                        </div>      
+                        
+                        </>                                   
                 })
             }
             <Footer />

@@ -5,7 +5,7 @@ import PostAddIcon from '@material-ui/icons/PostAdd';
 
 const CreateNote = (props) => {
     const [note, setNote] = useState({ title: "", content: "" })
-
+    console.log(props);
     const inputNote = (event) => {
         const { name, value } = event.target;
         setNote((preData) => {
@@ -24,16 +24,16 @@ const CreateNote = (props) => {
     };
     return (
         <>
-            <div className={props.editing ? 'blur' : "container-fluid"}>
-                <div className="row d-flex justify-content-center">
-                    <div className="col-md-4 my-5 col-11 mx-auto">
-                        <div className="main_note">
+            <div className={props.darkMode ? 'darkMode' : "container-fluid"}>
+                <div className="row d-flex  justify-content-center">
+                    <div className="col-md-5 my-5 col-11 mx-auto">
+                        <div className="main_note shadow ">
                             <form>
                                 <div className="form-group d-flex flex-column" >
                                     <input type="text" className=" mx-2 mt-4 note_title" name="title" value={note.title} onChange={inputNote} autoComplete="off" placeholder="Title" required />
                                     <textarea placeholder="Write a note here..." rows="3" className=" my-3 mx-2 note_content" name="content" value={note.content} onChange={inputNote} required ></textarea>
                                     <center>
-                                        <button className="note_btn" onClick={addNote} type="button"><span className="p-0 hide">CREATE</span><PostAddIcon /></button>
+                                        <button className="note_btn" onClick={addNote} type="button"><span className=""></span><PostAddIcon /></button>
                                     </center>
                                 </div>
                             </form>

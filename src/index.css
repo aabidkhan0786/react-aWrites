@@ -11,8 +11,9 @@ body{
     background-size: cover;
 }
 
+
 .head{
-    font-size:30px;
+    font-size:25px;
     font-family: 'Pangolin', cursive;
     letter-spacing: 2px;
     color:white;
@@ -25,7 +26,7 @@ body{
 
 .main_note{
     border: 2px solid #aaa; 
-    border-bottom: 4px solid #aaa; 
+    border-bottom: 3px solid #aaa; 
     border-bottom-right-radius: 35px ;
     border-bottom-left-radius: 35px ;
    
@@ -39,7 +40,7 @@ body{
 
 .main_note input[type="text"]{
     border: 1px solid #aaa; 
-    border-bottom: 3px solid #aaa; 
+    border-bottom: 2px solid #aaa; 
     outline:none;
     padding-left:25px;
     text-transform: capitalize;
@@ -72,7 +73,7 @@ textarea:hover{
 }
 
 .note_btn{
-    width:25%;
+    width:23%;
     background-color:white;
     border:1px solid #aaa;
     /* outline:none; */
@@ -80,6 +81,7 @@ textarea:hover{
     border-bottom-right-radius: 10px ;
     border-bottom-left-radius: 10px ;
     font-family: 'Pangolin', cursive;
+    /* font-size: 14px; */
 }
 
 .note_btn:focus{
@@ -94,13 +96,35 @@ textarea:hover{
     color:black;
 }
 
-.short_note{  
-    width:40%;
-    float:left;
-    margin-left:10px;
+.short_note_list{
+    width:50%;
+    margin-left:25px;
     border: 2px solid #f0ad4e; 
     border-bottom-right-radius: 35px ;
     border-bottom-left-radius: 35px ;
+}
+
+.short_note{  
+    width:78%;
+    /* float:left; */
+    margin-left:25px;
+    border: 2px solid #f0ad4e; 
+    border-bottom-right-radius: 35px ;
+    border-bottom-left-radius: 35px ;
+}
+
+.child_div{
+    width:50%;
+    float:left;
+    display: flex;
+    justify-content: center;
+}
+
+.child_div_list{
+    width:100%;
+    /* float:left; */
+    display: flex;
+    justify-content: center;
 }
 
 .p1{
@@ -187,6 +211,18 @@ textarea:hover{
         height:auto; 
         width:auto;
         float:none;       
+    }
+    .short_note{  
+        width:100%;
+    }
+    .child_div{
+        width:100%
+    }
+    .short_note_list{  
+        width:100%;
+    }
+    .child_div_list{
+        width:100%
     }
 
     .foot{

@@ -10,7 +10,7 @@ const Footer = () => {
                 <img className="img my-4" src={img} alt="thanks_gifs"></img>
             </div>
             <div className="footer">
-                <h3 className="foot">Designed By Abdul Aabid Khan © All Rights Reserved.</h3>
+                <h5 className="foot">Designed By Abdul Aabid Khan © All Rights Reserved.</h5>
             </div>
 
         </>
